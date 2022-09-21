@@ -607,7 +607,7 @@ button {
   border-radius: 15px;
   padding: 34px 30px;
 }
-.card .top .choose h4 {
+.card .top .choose h1 {
   font-size: 18px;
   color: #000000;
   margin-bottom: 9px;
@@ -745,13 +745,12 @@ button {
   background: #ffffff;
   box-shadow: 0px 0px 27.2043px rgba(0, 0, 0, 0.06);
   border-radius: 18px;
-  padding: 21px 29px 38px 32px;
+  padding: 28px 35px 38px 32px;
 }
-.card .bottom .sidebar p {
+.card .bottom .sidebar .title {
   font-family: "TTNormsPro-Regular";
-  font-size: 15px;
+  font-size: 14.5089px;
   color: #000000;
-  text-align: center;
   margin-bottom: 16px;
 }
 .card .bottom .sidebar .info {
@@ -764,4 +763,70 @@ button {
   font-size: 15px;
   color: #000;
   margin-left: 15px;
+}
+.card .bottom .sidebar .range {
+  margin-top: 34px;
+}
+.card .bottom .sidebar .range-line {
+  width: 186px;
+  height: 3px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 16px;
+}
+.card .bottom .sidebar .range-line .green-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00ac4e;
+  border-radius: 3px;
+  height: 100%;
+}
+.card .bottom .sidebar .range-line .round {
+  width: 12px;
+  height: 12px;
+  background: #00ac4e;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 33%;
+}
+.card .bottom .sidebar .range-line .round::before {
+  content: attr(data-min);
+  font-size: 11px;
+  color: #000000;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 150px;
+  transform: translateX(-27%);
+}
+.card .bottom .sidebar .range-line::before {
+  content: attr(data-mins);
+  font-size: 11px;
+  color: #000000;
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card .bottom .sidebar .range-line::after {
+  content: attr(data-maxs);
+  font-size: 11px;
+  color: #000000;
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.card .bottom .sidebar .range-line .text {
+  font-family: "TTNormsPro-Regular";
+  font-size: 8.37989px;
+  color: #000000;
+  text-align: center;
+  padding-top: 12px;
 }/*# sourceMappingURL=style.css.map */

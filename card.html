@@ -59,7 +59,7 @@
                     <img src="img/food.jpg" alt="">
                 </div>
                 <div class="choose">
-                    <h4>Говядина 250гр</h4>
+                    <h1>Говядина 250гр</h1>
                     <div class="rating">
                         <span class="icon-star active"></span>
                         <span class="icon-star active"></span>
@@ -95,9 +95,30 @@
                 </div>
             </div>
             <div class="bottom">
-                <div class="info"></div>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">О товаре</a></li>
+                        <li><a href="#tabs-2">Параметры</a></li>
+                        <li><a href="#tabs-3">Отзывы</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h2>Описание</h2>
+                        <p>Полутвердый пластичный однородный сыр, слегка ломкий на изгибе. Пажитник придает легкое ореховое послевкусие. В Италии считается столовым сыром, который подходит к любому времени суток и к любому блюду и к вину</p>
+                        <p>Вес головки 500 г. +/-10%. Цена за 1 кг.</p>
+                        <p>Продукция компании Alpenville изготовлена преимущественно из Шарангского молока</p>
+                    </div>
+                    <div id="tabs-2">
+                        <ul>
+                            <li><b>Калории:</b>420</li>
+                            <li><b>Жиры:</b>54</li>
+                            <li><b>Белки:</b>27</li>
+                            <li><b>Углеводы:</b>18</li>
+                            <li><b>Масса:</b>500 грамм</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="sidebar">
-                    <p>Закажите на 3000 RUB и получите</p>
+                    <p class="title">Закажите на 3000 RUB и получите</p>
                     <div class="info">
                         <img src="img/card-svg-1.svg" alt="">
                         <span><b>30 RUB</b> на бонусный счет</span>
@@ -105,6 +126,13 @@
                     <div class="info">
                         <img src="img/card-svg-2.svg" alt="">
                         <span><b>Бесплатная доставка</b></span>
+                    </div>
+                    <div class="range">
+                        <div class="range-line" data-mins="0" data-maxs="3000">
+                            <div class="green-line" style="width: 79%;"></div>
+                            <div class="round" data-min="1000 (минимальный заказ)"></div>
+                            <p class="text">Осталось <b>1988 RUB</b> до бесплатной доставки</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,6 +195,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 </body>
 
