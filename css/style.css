@@ -737,8 +737,46 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.card .bottom .info {
+.card .bottom #tabs {
   width: 646px;
+  border: none;
+}
+.card .bottom #tabs.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+.card .bottom #tabs .titles {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+}
+.card .bottom #tabs .titles.ui-helper-clearfix:before, .card .bottom #tabs .titles.ui-helper-clearfix:after {
+  display: none;
+}
+.card .bottom #tabs .titles li {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.card .bottom #tabs .titles li a.ui-tabs-anchor {
+  padding: 0;
+}
+.card .bottom #tabs .titles li.ui-tabs-active.ui-state-active {
+  background: transparent;
+  border: none;
+}
+.card .bottom #tabs .titles li.ui-tabs-active.ui-state-active a {
+  font-family: "TTNormsPro-Medium";
+  color: #00ac4e;
+}
+.card .bottom #tabs .titles a {
+  font-family: "TTNormsPro-Regular";
+  font-size: 29px;
+  color: #828282;
+}
+.card .bottom #tabs .ui-tabs-panel {
+  padding: 0;
+  padding-top: 41px;
 }
 .card .bottom .sidebar {
   width: 305px;

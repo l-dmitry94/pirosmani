@@ -711,8 +711,49 @@
     & .bottom {
         display: flex;
         justify-content: space-between;
-        & .info {
+        & #tabs {
             width: 646px;
+            border: none;
+            &.ui-tabs .ui-tabs-nav {
+                padding: 0;
+            }
+            & .titles {
+                display: flex;
+                justify-content: space-between;
+                background: transparent;
+                border: none;
+                &.ui-helper-clearfix:before,
+                &.ui-helper-clearfix:after {
+                    display: none;
+                }
+                & li {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    & a {
+                        &.ui-tabs-anchor {
+                            padding: 0;
+                        }
+                    }
+                    &.ui-tabs-active.ui-state-active {
+                        background: transparent;
+                        border: none;
+                        & a {
+                            font-family: "TTNormsPro-Medium";
+                            color: #00ac4e;
+                        }
+                    }
+                }
+                & a {
+                    font-family: "TTNormsPro-Regular";
+                    font-size: 29px;
+                    color: #828282;
+                }
+            }
+            & .ui-tabs-panel {
+                padding: 0;
+                padding-top: 41px;
+            }
         }
         & .sidebar {
             width: 305px;
