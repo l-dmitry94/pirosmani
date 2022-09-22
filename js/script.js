@@ -56,3 +56,20 @@ jQuery(function(){
 
 
 $("#tabs").tabs();
+
+$(".review-text button").on("click", function(e){
+  e.preventDefault();
+  $(this).parent(".review-text").addClass("active");
+  $(this).hide();
+})
+
+
+$('.owl-carousel.reviews').owlCarousel({
+  loop:false,
+  nav:true,
+  margin: 16,
+  autoWidth: true,
+  dots: false,
+  items: 2,
+  navText: ["", "<span>Ещё</span><img src='../img/reviews-arrow.svg'>"]
+})
