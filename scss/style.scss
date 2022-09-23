@@ -1068,3 +1068,272 @@
         }
     }
 }
+
+.basket {
+    margin-top: 45px;
+    margin-bottom: 60px;
+    & h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        width: 609px;
+        & .order {
+            margin-bottom: 42px;
+            &-item {
+                border-top: 1px solid #ebebeb;
+                &:last-child {
+                    border-bottom: 1px solid #ebebeb;
+                }
+                & .order-inner {
+                    width: 599px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 0 22px 0;
+
+                    & .order-img {
+                        width: 111px;
+                        height: 82px;
+                        background: #00ac4e;
+                        border-radius: 5px;
+                        margin-right: auto;
+                        margin-left: 15px;
+                    }
+                    & .order-name {
+                        font-size: 18px;
+                        color: #000000;
+                        margin-right: auto;
+                        margin-left: -100px;
+                    }
+                    & .range {
+                        width: 128px;
+                        height: 47px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                        background: #fcfcfc;
+                        border: 0.903636px solid #ebebeb;
+                        border-radius: 9px;
+                        position: relative;
+                        right: 63px;
+                        padding: 0 25px;
+                        & span {
+                            cursor: pointer;
+                            font-size: 24px;
+                            transition: all 0.3s;
+                            &:hover {
+                                color: #00ac4e;
+                            }
+                        }
+                        & input {
+                            width: 50%;
+                            background: #fcfcfc;
+                            text-align: center;
+                            border: none;
+                            font-family: "TTNormsPro-Regular";
+                            font-size: 13px;
+                            color: #000000;
+                        }
+                    }
+                }
+                & b {
+                    font-size: 20px;
+                    color: #000000;
+                }
+            }
+        }
+        & .sidebar {
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0px 0px 27.2043px rgba(0, 0, 0, 0.06);
+            border-radius: 18px;
+            padding: 38px 35px 79px 41px;
+            & .title {
+                font-family: "TTNormsPro-Regular";
+                font-size: 20px;
+                color: #000000;
+                margin-bottom: 26px;
+            }
+            & .info {
+                display: flex;
+                align-items: center;
+                margin-bottom: 38px;
+                margin-left: 14px;
+                & img{
+                    max-width: 45px;
+                    max-height: 51px;
+                    width: 100%;
+                    height: 100%;
+                }
+                & span {
+                    font-family: "TTNormsPro-Regular";
+                    font-size: 20px;
+                    color: #000;
+                    margin-left: 15px;
+                }
+            }
+            & .range {
+                margin-top: 49px;
+                &-line {
+                    width: 85%;
+                    height: 3px;
+                    background: #f2f2f2;
+                    border-radius: 3px;
+                    position: relative;
+                    margin: 0 25px;
+
+                    & .green-line {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #00ac4e;
+                        border-radius: 3px;
+                        height: 100%;
+                    }
+                    & .round {
+                        width: 15px;
+                        height: 15px;
+                        background: #00ac4e;
+                        border: 2px solid #ffffff;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        left: 33%;
+                        &::before {
+                            content: attr(data-min);
+                            font-size: 15px;
+                            color: #000000;
+                            position: absolute;
+                            top: -23px;
+                            left: 45px;
+                            width: 200px;
+                            transform: translateX(-27%);
+                        }
+                    }
+                    &::before {
+                        content: attr(data-mins);
+                        font-size: 15px;
+                        color: #000000;
+                        position: absolute;
+                        left: -24px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &::after {
+                        content: attr(data-maxs);
+                        font-size: 15px;
+                        color: #000000;
+                        position: absolute;
+                        right: -51px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        text-align: right;
+                    }
+                    & .text {
+                        font-family: "TTNormsPro-Regular";
+                        font-size: 11.5px;
+                        color: #000000;
+                        text-align: center;
+                        padding-top: 19px;
+                        padding-left: 21px;
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        width: 345px;
+        margin-top: -63px;
+        & .sum {
+            background: #ffffff;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 20px;
+            padding: 51px 55px 41px 43px;
+            margin-bottom: 45px;
+            & h3 {
+                font-size: 20px;
+                color: #000000;
+                margin-bottom: 42px;
+            }
+            & .check {
+                margin-bottom: 50px;
+                & .line {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & span,
+                    & b {
+                        font-size: 16px;
+                        color: #000000;
+                        &.green {
+                            color: #00ac4e;
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            & .total {
+                margin-bottom: 30px;
+                & span {
+                    font-size: 16px;
+                    color: #000000;
+                }
+                & b {
+                    display: block;
+                    font-size: 20px;
+                    color: #000000;
+                    margin-top: 9px;
+                }
+            }
+            & button {
+                width: 163px;
+                height: 52px;
+                font-size: 16px;
+                color: #ffffff;
+                background: #00ac4e;
+                border-radius: 5px;
+            }
+        }
+        & .promo {
+            padding-left: 10px;
+            & h3 {
+                font-size: 20px;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            &-input {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & input {
+                    width: 187px;
+                    height: 47px;
+                    color: #c6c6c6;
+                    background: #fcfcfc;
+                    border: 1px solid #ebebeb;
+                    border-radius: 5px;
+                    font-family: "TTNormsPro-Regular";
+                    font-size: 14px;
+                    padding: 13px 17px;
+                }
+                & button {
+                    width: 140px;
+                    height: 47px;
+                    background: #00ac4e;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
