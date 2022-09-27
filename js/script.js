@@ -98,3 +98,55 @@ jQuery(function(){
     }
   });
 });
+
+
+$(".com-add").next(".form-line").hide();
+$(".com-add").prev(".form-line").hide();
+
+$(".com-add").on("click", function(e){
+  e.preventDefault();
+  $(this).next(".form-line").show();
+  $(this).hide();
+})
+
+
+var sum = 0;
+$(".order-price span").each(function(){
+  sum += parseInt($(this).html());
+})
+var itog = '<b>' + sum + ' ₽</b>';
+$('.sum').append(itog);
+var sum2 = sum;
+$('.total-right b').each(function(){
+  sum2 += parseInt($(".delivery .green").html())
+})
+var itog2 = '<b>' + sum2 + ' ₽</b>';
+$('.total-right b').replaceWith(itog2);
+
+
+$(".ordering-choose button").each(function(){
+  $(this).on("click", function(){
+    $(".ordering-choose button").removeClass("active");
+    $(this).addClass("active");
+  })
+})
+
+$(".pickup").on("click", function(){
+  $(".cities, .address, .payment, .com-add, .comment").hide();
+  var discount = 0;
+  discount = sum2 * 0.2;
+  var discountItog = '<b class="green">' + discount + ' ₽</b>';
+  $('.delivery .green').replaceWith(discountItog);
+})
+$(".ordering-choose .delivery").on("click", function(){
+  $(".cities, .address, .payment, .com-add, .comment").show();
+  var discount = 0;
+  var discountItog = '<b class="green">' + discount + ' ₽</b>';
+  $('.delivery .green').replaceWith(discountItog);
+})
+
+
+$(".order-item button").on("click", function(){
+  $(this).parent().parent().remove();
+})
+

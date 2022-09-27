@@ -1346,4 +1346,164 @@ button {
   border-radius: 5px;
   font-size: 14px;
   color: #ffffff;
+}
+
+.ordering h1 {
+  margin-bottom: 25px;
+}
+.ordering h2 {
+  font-size: 26px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.ordering .basket-block .basket-left {
+  width: 508px;
+}
+.ordering .basket-block .basket-left .order {
+  min-height: 367px;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner {
+  width: 492px;
+  margin: 0 auto;
+  display: flex;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner .order-img {
+  margin: 0;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner .order-name {
+  margin: 0;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner .range {
+  position: static;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner .order-price span {
+  color: #000;
+}
+.ordering .basket-block .basket-left .ordering-choose .buttons {
+  margin-bottom: 7px;
+}
+.ordering .basket-block .basket-left .ordering-choose .buttons button {
+  font-size: 15px;
+  color: #828282;
+  padding: 10px 24px;
+}
+.ordering .basket-block .basket-left .ordering-choose .buttons button.active {
+  background: #00ac4e;
+  border-radius: 9.59274px;
+  color: #fff;
+}
+.ordering .basket-block .basket-left .ordering-choose .buttons button.delivery {
+  margin: 0;
+}
+.ordering .basket-block .basket-left .ordering-choose .total {
+  width: 466px;
+  background: #ffffff;
+  box-shadow: 0px 0px 28.763px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 30px;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left {
+  width: 202px;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left .sum, .ordering .basket-block .basket-left .ordering-choose .total-left .delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left .sum {
+  margin-bottom: 16px;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left .delivery {
+  margin: 0;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left b {
+  font-size: 13px;
+  color: #000000;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-left b.green {
+  color: #00ac4e;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-right span {
+  font-size: 15px;
+  color: #000000;
+}
+.ordering .basket-block .basket-left .ordering-choose .total-right b {
+  display: block;
+  font-size: 19px;
+  color: #000000;
+  margin-top: 5px;
+}
+.ordering .basket-block .data-right {
+  width: 451px;
+}
+.ordering .basket-block .data-right .form-line {
+  margin-bottom: 17px;
+}
+.ordering .basket-block .data-right .form-line .label {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 3px;
+}
+.ordering .basket-block .data-right .form-line input, .ordering .basket-block .data-right .form-line select {
+  width: 100%;
+  height: 64px;
+  transition: all 0.3s;
+  background: #fcfcfc;
+  border: 1px solid #ebebeb;
+  border-radius: 7px;
+  font-family: "TTNormsPro-Regular";
+  font-size: 14px;
+  padding: 21px 29px;
+}
+.ordering .basket-block .data-right .form-line input::-moz-placeholder, .ordering .basket-block .data-right .form-line select::-moz-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.ordering .basket-block .data-right .form-line input:-ms-input-placeholder, .ordering .basket-block .data-right .form-line select:-ms-input-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.ordering .basket-block .data-right .form-line input::placeholder, .ordering .basket-block .data-right .form-line select::placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.ordering .basket-block .data-right .form-line input:focus-visible, .ordering .basket-block .data-right .form-line select:focus-visible {
+  outline: #00ac4e auto 1px;
+}
+.ordering .basket-block .data-right .form-line select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+  background-image: url(../img/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+.ordering .basket-block .data-right .form-line select option {
+  font-family: "TTNormsPro-Regular";
+  font-size: 17px;
+}
+.ordering .basket-block .data-right .com-add {
+  display: block;
+  font-size: 17px;
+  color: #00ac4e;
+  margin-bottom: 35px;
+}
+.ordering .basket-block .data-right button[type=submit] {
+  width: 183px;
+  height: 58px;
+  background: #00ac4e;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 8px;
 }/*# sourceMappingURL=style.css.map */
