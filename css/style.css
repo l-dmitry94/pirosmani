@@ -1354,27 +1354,38 @@ button {
 .ordering h2 {
   font-size: 26px;
   color: #000000;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .ordering .basket-block .basket-left {
   width: 508px;
 }
 .ordering .basket-block .basket-left .order {
-  min-height: 367px;
+  min-height: 346px;
+}
+.ordering .basket-block .basket-left .order .order-item button img {
+  width: 25px;
+  height: 25px;
 }
 .ordering .basket-block .basket-left .order .order-item .order-inner {
-  width: 492px;
+  width: 499px;
   margin: 0 auto;
   display: flex;
+  padding: 14px 10px 14px 0;
 }
 .ordering .basket-block .basket-left .order .order-item .order-inner .order-img {
   margin: 0;
+  width: 78px;
+  height: 58px;
 }
 .ordering .basket-block .basket-left .order .order-item .order-inner .order-name {
   margin: 0;
+  font-size: 16px;
 }
 .ordering .basket-block .basket-left .order .order-item .order-inner .range {
   position: static;
+}
+.ordering .basket-block .basket-left .order .order-item .order-inner .order-price {
+  font-size: 19px;
 }
 .ordering .basket-block .basket-left .order .order-item .order-inner .order-price span {
   color: #000;
@@ -1385,7 +1396,7 @@ button {
 .ordering .basket-block .basket-left .ordering-choose .buttons button {
   font-size: 15px;
   color: #828282;
-  padding: 10px 24px;
+  padding: 8px 24px;
 }
 .ordering .basket-block .basket-left .ordering-choose .buttons button.active {
   background: #00ac4e;
@@ -1414,7 +1425,7 @@ button {
   align-items: center;
 }
 .ordering .basket-block .basket-left .ordering-choose .total-left .sum {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 .ordering .basket-block .basket-left .ordering-choose .total-left .delivery {
   margin: 0;
@@ -1438,6 +1449,7 @@ button {
 }
 .ordering .basket-block .data-right {
   width: 451px;
+  margin-top: -7px;
 }
 .ordering .basket-block .data-right .form-line {
   margin-bottom: 17px;
@@ -1446,11 +1458,11 @@ button {
   font-family: "TTNormsPro-Regular";
   font-size: 16px;
   color: #000000;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 .ordering .basket-block .data-right .form-line input, .ordering .basket-block .data-right .form-line select {
   width: 100%;
-  height: 64px;
+  height: 65px;
   transition: all 0.3s;
   background: #fcfcfc;
   border: 1px solid #ebebeb;
@@ -1506,4 +1518,40 @@ button {
   font-size: 16px;
   color: #ffffff;
   margin-top: 8px;
+}
+
+.profile-tabs {
+  display: flex;
+}
+.profile-tabs a {
+  width: 139px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+.profile-tabs a svg {
+  display: block;
+  fill: #00ac4e;
+  margin-bottom: 21px;
+}
+.profile-tabs a span {
+  display: block;
+  font-size: 14px;
+  color: #00ac4e;
+}
+.profile-tabs a.active {
+  background: #00ac4e;
+  border-radius: 16px;
+}
+.profile-tabs a.active svg {
+  fill: #fff;
+}
+.profile-tabs a.active span {
+  color: #fff;
+}
+.profile-tabs a:not(:last-child) {
+  margin-right: 86px;
 }/*# sourceMappingURL=style.css.map */
