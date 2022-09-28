@@ -169,9 +169,24 @@ function calc() {
 calc();
 
 
-$('.profile-tabs a').each(function () {
-  $(this).on('click', function () {
-    $('.profile-tabs a').removeClass('active');
-    $(this).addClass('active');
+
+
+
+$(function(){
+  $('.profile-tabs a').each(function (e) {
+    $(this).on('click', function (e) {
+      e.preventDefault();
+      $('.profile-tabs a').removeClass('active');
+      $(this).addClass('active');
+      var anchor = $(this).attr('href');
+      if(anchor == '#tab-2'){
+        $('#tab-1').hide();
+        $('#tab-2').show();
+      }
+      else{
+        $('#tab-1').show();
+        $('#tab-2').hide();
+      }
+    })
   })
 })

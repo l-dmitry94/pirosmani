@@ -1520,38 +1520,284 @@ button {
   margin-top: 8px;
 }
 
-.profile-tabs {
+.profile {
+  margin: 60px 0;
+}
+.profile-tabs .block {
   display: flex;
 }
-.profile-tabs a {
+.profile-tabs .block a {
   width: 139px;
   height: 109px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.1s;
 }
-.profile-tabs a svg {
+.profile-tabs .block a svg {
   display: block;
   fill: #00ac4e;
   margin-bottom: 21px;
 }
-.profile-tabs a span {
+.profile-tabs .block a span {
   display: block;
   font-size: 14px;
   color: #00ac4e;
 }
-.profile-tabs a.active {
+.profile-tabs .block a.active {
   background: #00ac4e;
   border-radius: 16px;
 }
-.profile-tabs a.active svg {
+.profile-tabs .block a.active svg {
   fill: #fff;
 }
-.profile-tabs a.active span {
+.profile-tabs .block a.active span {
   color: #fff;
 }
-.profile-tabs a:not(:last-child) {
+.profile-tabs .block a:not(:last-child) {
   margin-right: 86px;
+}
+.profile #tab-1 {
+  margin-top: 45px;
+}
+.profile #tab-1 form {
+  display: flex;
+  justify-content: space-between;
+}
+.profile #tab-1 form h3 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.profile #tab-1 form h3 span {
+  display: block;
+  font-size: 20px;
+  color: #000000;
+}
+.profile #tab-1 form .tab-left {
+  max-width: 487px;
+  width: 100%;
+}
+.profile #tab-1 form .tab-left .photo-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.profile #tab-1 form .tab-left .photo-input .photo {
+  width: 75px;
+  height: 75px;
+  background: #00ac4e;
+  border-radius: 12px;
+  margin-right: 18px;
+}
+.profile #tab-1 form .tab-left .photo-input input {
+  display: none;
+}
+.profile #tab-1 form .tab-left .photo-input label {
+  font-family: "TTHoves-Medium";
+  font-size: 18px;
+  color: #00ac4e;
+  padding: 0;
+  border-bottom: 1px solid #00ac4e;
+  cursor: pointer;
+}
+.profile #tab-1 form .tab-left .form-line {
+  margin-bottom: 19px;
+}
+.profile #tab-1 form .tab-left .form-line .label {
+  font-family: "TTNormsPro-Regular";
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 11px;
+}
+.profile #tab-1 form .tab-left .form-line input {
+  width: 100%;
+  height: 52px;
+  background: #fcfcfc;
+  border: 1.61275px solid #ebebeb;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #000000;
+  padding: 0 24px;
+}
+.profile #tab-1 form .tab-left .form-line input::-moz-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-left .form-line input:-ms-input-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-left .form-line input::placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 16px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-left .form-line input:focus-visible {
+  outline: #00ac4e auto 1px;
+}
+.profile #tab-1 form .tab-left .form-fullname {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profile #tab-1 form .tab-left .form-fullname .form-line {
+  width: 260px;
+}
+.profile #tab-1 form .tab-left .form-fullname .form-line.name {
+  width: 180px;
+}
+.profile #tab-1 form .tab-right {
+  max-width: 431px;
+  width: 100%;
+}
+.profile #tab-1 form .tab-right .form-line {
+  margin-bottom: 17px;
+}
+.profile #tab-1 form .tab-right .form-line .label {
+  margin-bottom: 10px;
+}
+.profile #tab-1 form .tab-right .form-line input {
+  width: 100%;
+  height: 46px;
+  padding: 0 21px;
+  border: 1.42715px solid #ebebeb;
+  border-radius: 7px;
+  font-size: 17px;
+  color: #000000;
+}
+.profile #tab-1 form .tab-right .form-line input::-moz-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 14px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-right .form-line input:-ms-input-placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 14px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-right .form-line input::placeholder {
+  font-family: "TTNormsPro-Regular";
+  font-size: 14px;
+  color: #c6c6c6;
+}
+.profile #tab-1 form .tab-right .form-line input:focus-visible {
+  outline: #00ac4e auto 1px;
+}
+.profile #tab-1 form .tab-right .form-phone {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.profile #tab-1 form .tab-right .form-phone .form-line {
+  width: 202px;
+}
+.profile #tab-1 form .tab-right button {
+  width: 184px;
+  height: 44px;
+  background: #00ac4e;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+.profile #tab-2 {
+  display: none;
+  margin-top: 60px;
+}
+.profile #tab-2 .order {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 0px 16.2899px rgba(0, 0, 0, 0.07);
+  border-radius: 13px;
+  padding: 24px 27px 21px 24px;
+}
+.profile #tab-2 .order .order-left .order-line b {
+  font-size: 19px;
+  color: #000000;
+}
+.profile #tab-2 .order .order-left .order-line span {
+  font-family: "TTNormsPro-Regular";
+  font-size: 19px;
+  color: #000000;
+  margin-left: 8px;
+}
+.profile #tab-2 .order .order-left .order-line span.green {
+  color: #00ac4e;
+}
+.profile #tab-2 .order .order-left .order-line span.red {
+  color: #eb5757;
+}
+.profile #tab-2 .order .order-left .order-line:not(:last-child) {
+  margin-bottom: 16px;
+}
+.profile #tab-2 .order .order-right {
+  width: 515px;
+}
+.profile #tab-2 .order .order-right .order-block {
+  margin-bottom: 17px;
+}
+.profile #tab-2 .order .order-right .order-block .order-item {
+  border-top: 1px solid #ebebeb;
+  padding: 15px 0;
+}
+.profile #tab-2 .order .order-right .order-block .order-item .order-inner {
+  width: 464px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile #tab-2 .order .order-right .order-block .order-item .order-inner .photo {
+  width: 79px;
+  height: 58px;
+  background: #00ac4e;
+  border-radius: 4px;
+}
+.profile #tab-2 .order .order-right .order-block .order-item .order-inner .title {
+  font-size: 16px;
+  color: #000000;
+}
+.profile #tab-2 .order .order-right .order-block .order-item .order-inner .amount {
+  width: 114px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fcfcfc;
+  border: 0.882021px solid #ebebeb;
+  border-radius: 8.82021px;
+  font-family: "TTNormsPro-Regular";
+  font-size: 12px;
+  color: #000000;
+}
+.profile #tab-2 .order .order-right .order-block .order-item .order-inner .price {
+  font-size: 20px;
+  color: #000000;
+}
+.profile #tab-2 .order .order-right .order-block .order-item:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+.profile #tab-2 .order .order-right .order-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile #tab-2 .order .order-right .order-button button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #00ac4e;
+}
+.profile #tab-2 .order .order-right .order-button button::after {
+  content: url(../img/repeat-order.svg);
+  width: 17px;
+  height: 17px;
+  margin-left: 8px;
+}
+.profile #tab-2 .order:not(:last-child) {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
