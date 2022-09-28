@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pirosmani</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/iconsfont.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,17 +27,28 @@
                     <ul class="menu">
                         <li><a href="#">Меню</a>
                             <ul class="dropdown">
-                                <li><a href="#"><span class="img"><img src="img/soup.svg" alt=""></span><span>Супы</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/hachapuri.svg" alt=""></span><span>Хачапури</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/holodnoe.svg" alt=""></span><span>Холодные закуски</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/khinkali.svg" alt=""></span><span>Хинкали</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/shashlik.svg" alt=""></span><span>Шашлык</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/soucy.svg" alt=""></span><span>Соусы</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/salat.svg" alt=""></span><span>Салаты</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/goryachee.svg" alt=""></span><span>Горячие блюда</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/garnir.svg" alt=""></span><span>Гарнир</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/desert.svg" alt=""></span><span>Десерты</span></a></li>
-                                <li><a href="#"><span class="img"><img src="img/napitki.svg" alt=""></span><span>Напитки</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/soup.svg"
+                                                alt=""></span><span>Супы</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/hachapuri.svg"
+                                                alt=""></span><span>Хачапури</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/holodnoe.svg"
+                                                alt=""></span><span>Холодные закуски</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/khinkali.svg"
+                                                alt=""></span><span>Хинкали</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/shashlik.svg"
+                                                alt=""></span><span>Шашлык</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/soucy.svg"
+                                                alt=""></span><span>Соусы</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/salat.svg"
+                                                alt=""></span><span>Салаты</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/goryachee.svg"
+                                                alt=""></span><span>Горячие блюда</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/garnir.svg"
+                                                alt=""></span><span>Гарнир</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/desert.svg"
+                                                alt=""></span><span>Десерты</span></a></li>
+                                <li><a href="#"><span class="img"><img src="img/napitki.svg"
+                                                alt=""></span><span>Напитки</span></a></li>
                             </ul>
                         </li>
                         <li><a href="#">Доставка</a></li>
@@ -45,12 +61,31 @@
                     <span class="phone-number">+7 (831) 282-60-00</span>
                 </a>
                 <div class="buttons">
-                    <button class="icon-person"></button>
-                    <button class="icon-shopping-cart"></button>
+                    <a href="#" class="icon-person" id="person"></a>
+                    <a href="#" class="icon-shopping-cart"></a>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="popup-overlay-login">
+        <div class="popup-position">
+            <div class="popup-data popup-login">
+                <div class="close"><img src="img/close.svg" alt=""></div>
+                <div class="person-img"><span class="icon-person"></span></div>
+                <form action="#">
+                    <h4>Войти в личный кабинет</h4>
+                    <div class="form-group">
+                        <div class="form-line"><input class="phone" type="tel" placeholder="Телефон"></div>
+                        <div class="form-line"><input class="password" type="password" placeholder="Пароль"></div>
+                    </div>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
+                    <button type="button">Войти</button>
+                    <div class="reg">Впервые у нас? <span>Зарегистрироваться</span></div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section class="banner">
         <div class="container">
@@ -450,14 +485,17 @@
                 <li class="page-item"><a class="page-link">4</a></li>
                 <li class="page-item exc"><a class="page-link">...</a></li>
                 <li class="page-item"><a class="page-link">8</a></li>
-                <li class="page-item next"><a href="" class="page-link" aria-label="Next"><span class="icon-arrow"></span></a></li>
+                <li class="page-item next"><a href="" class="page-link" aria-label="Next"><span
+                            class="icon-arrow"></span></a></li>
             </ul>
         </div>
     </section>
 
     <section class="video">
         <div class="video__block">
-            <iframe class="yt-video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="yt-video" src="" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <button class="play"><img src="img/play.svg" alt=""></button>
         </div>
     </section>
@@ -474,7 +512,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <footer class="footer">
@@ -513,12 +551,35 @@
             </div>
         </div>
     </footer>
-        
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
+
+<section class="popup-overlay-login" id="popup-overlay-login">
+    <div class="popup-position">
+        <div class="popup-data popup-login">
+            <div class="close"><img src="img/close.svg" alt=""></div>
+            <div class="person-img"><span class="icon-person"></span></div>
+            <form action="#">
+                <h4>Войти в личный кабинет</h4>
+                <div class="form-group">
+                    <div class="form-line"><input class="phone" type="tel" placeholder="Телефон"></div>
+                    <div class="form-line"><input class="password" type="password" placeholder="Пароль"></div>
+                </div>
+                <a href="#" class="forgot-password">Забыли пароль?</a>
+                <button type="button">Войти</button>
+                <div class="reg">Впервые у нас? <span>Зарегистрироваться</span></div>
+            </form>
+        </div>
+    </div>
+</section>

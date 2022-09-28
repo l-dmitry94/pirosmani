@@ -122,7 +122,7 @@ button {
   display: flex;
   margin-left: 10px;
 }
-.header__block .buttons button {
+.header__block .buttons a {
   width: 31px;
   height: 31px;
   color: #00ac4e;
@@ -1800,4 +1800,120 @@ button {
 }
 .profile #tab-2 .order:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.popup-overlay-login {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup-overlay-login.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-overlay-login .popup-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-overlay-login .popup-position .popup-data {
+  position: relative;
+  text-align: center;
+}
+.popup-overlay-login .popup-position .popup-data .close {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  cursor: pointer;
+}
+.popup-overlay-login .popup-position .popup-data .form-line input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding: 0 17px 0 49px;
+  background: #fcfcfc;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center left 18px;
+}
+.popup-overlay-login .popup-position .popup-data .form-line input::-moz-placeholder {
+  font-size: 12px;
+  font-family: "TTNormsPro-Regular";
+  color: #c6c6c6;
+}
+.popup-overlay-login .popup-position .popup-data .form-line input:-ms-input-placeholder {
+  font-size: 12px;
+  font-family: "TTNormsPro-Regular";
+  color: #c6c6c6;
+}
+.popup-overlay-login .popup-position .popup-data .form-line input::placeholder {
+  font-size: 12px;
+  font-family: "TTNormsPro-Regular";
+  color: #c6c6c6;
+}
+.popup-overlay-login .popup-position .popup-data .form-line:not(:last-child) {
+  margin-bottom: 25px;
+}
+.popup-overlay-login .popup-position .popup-login {
+  width: 358px;
+  background: #ffffff;
+  box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
+  border-radius: 17px;
+  padding: 29px 43px 35px 45px;
+}
+.popup-overlay-login .popup-position .popup-login .icon-person {
+  display: block;
+  font-size: 34px;
+  color: #c6c6c6;
+  margin-bottom: 14px;
+}
+.popup-overlay-login .popup-position .popup-login h4 {
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 29px;
+}
+.popup-overlay-login .popup-position .popup-login .form-group {
+  margin-bottom: 14px;
+}
+.popup-overlay-login .popup-position .popup-login .form-group input.phone {
+  background-image: url(../img/popup-phone.svg);
+}
+.popup-overlay-login .popup-position .popup-login .form-group input.password {
+  background-image: url(../img/popup-password.svg);
+}
+.popup-overlay-login .popup-position .popup-login .forgot-password {
+  display: inline-block;
+  font-size: 14px;
+  color: #00ac4e;
+  border-bottom: 1px solid #00ac4e;
+  margin-bottom: 12px;
+}
+.popup-overlay-login .popup-position .popup-login button[type=button] {
+  display: block;
+  width: 143px;
+  height: 45px;
+  margin: 0 auto;
+  background: #00ac4e;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.popup-overlay-login .popup-position .popup-login .reg {
+  font-family: "TTNormsPro-Regular";
+  font-size: 12px;
+  color: #000000;
+}
+.popup-overlay-login .popup-position .popup-login .reg span {
+  font-family: "TTNormsPro-Medium";
+  color: #00ac4e;
 }/*# sourceMappingURL=style.css.map */

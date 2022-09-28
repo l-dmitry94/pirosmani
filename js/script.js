@@ -169,24 +169,44 @@ function calc() {
 calc();
 
 
-
-
-
-$(function(){
+$(function () {
   $('.profile-tabs a').each(function (e) {
     $(this).on('click', function (e) {
       e.preventDefault();
       $('.profile-tabs a').removeClass('active');
       $(this).addClass('active');
       var anchor = $(this).attr('href');
-      if(anchor == '#tab-2'){
+      if (anchor == '#tab-2') {
         $('#tab-1').hide();
         $('#tab-2').show();
-      }
-      else{
+      } else {
         $('#tab-1').show();
         $('#tab-2').hide();
       }
     })
+  })
+})
+
+$(function () {
+  $('#person').on('click', function (e) {
+    e.preventDefault();
+    $('.popup-overlay-login').addClass('open');
+  })
+})
+
+$(function () {
+  $('.close').on('click', function (e) {
+    $('.popup-overlay-login').removeClass('open');
+  })
+})
+
+
+$(function(){
+  $('.popup-overlay-login').on('click', function(e){
+    var overlay = $('.popup-overlay-login');
+    var modal = $('.popup-data');
+    if(!modal.is(e.target) && modal.has(e.target).length === 0){
+      $(this).removeClass('open');
+    }
   })
 })
